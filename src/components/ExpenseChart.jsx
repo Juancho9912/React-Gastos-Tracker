@@ -33,7 +33,7 @@ function ExpenseChart() {
 				{ x: "Incomes", y: totalIncomes },
 			]}
 			animate={{ duration: 2000 }}
-			labels={({ datum }) => `${datum.y}%`}
+			labels={({ datum }) => datum.y}
 			labelComponent={<VictoryLabel
 				angle={45}
 				style={{ fill: "white" }} />}
